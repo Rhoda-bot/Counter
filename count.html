@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="count.css">
+   
+    <title>Tranaport APP</title>
+</head>
+<body>
+    
+    
+    <div class="container" id="cont" style=" width: auto; height: 100vh">
+
+        <h3>The Transport App </h3>
+        <nav class="navbar bg-light shadow-sm">
+            <button class="btn btn-primary" onclick="menu()" style="width: 50px; height:50px;"><i class="fa fa-home w-50px" id="fa" ></i></button>
+            <button class="btn btn-primary" onclick="ret()" style="width: 50px; height:50px;"><i class="fa fa-arrow-left w-50px" id="hi" ></i></button>
+        </nav>
+       
+    </div>
+    <div style="background-color:dodgerblue; width:250px; height:400px; margin-top:-530px;" id="but">
+        <nav class="navbar bg-primary shadow-sm">
+               
+            <h5>select your desire option</h5>
+        </nav>
+       <li><button onclick="car()"  class="btn btn-light"><i class="fa fa-car" ></i></button></li><br>
+       <li><button onclick="mot()" class="btn btn-light"><i class="fa fa-motorcycle"></i></button></li><br>
+       <li><button onclick="truck()" class="btn btn-light"> <i class="fa fa-truck"></i></button></li><br>
+        <li><button onclick="bik()" class="btn btn-light"> <i class="fa fa-bicycle"></i></button></li><br>
+       
+    </div>
+    
+    <div class="contant" style="background-color: greenyellow;  border-color:black; margin-top:-530px" id="girl">
+        <center>
+        <button onclick="bip()" class="btn btn" style="width: 35px;"><i class="fa fa-times"></i></button>
+        <h4>count ur car n GO</h4>
+        <button onclick="bak()" class="btn btn-warning" style="width: 35px;"><i class="fa fa-arrow-left"></i></button>
+        <img src="cars/car.JPG" alt="">
+        <h6>Item:</h6>
+    
+        <button class="btn btn-success" style="width: 35px;"><i class="fa fa-plus"></i></button>
+        <button class="btn btn-info" style="width: 35px;"><i class="fa fa-minus"></i></button>
+        <input type="text" placeholder="place a value">
+        <button class="btn btn-danger" style="width: 35px;"><i class="fa fa-trash"></i></button>
+       
+        
+        
+    </center>
+    </div>
+
+    <div class="con" style="background-color: greenyellow; margin-top:-530px" id="gp">
+        <center>
+        <button onclick="kip()" class="btn btn" style="width: 35px;"><i class="fa fa-times"></i></button>
+        <h6>count ur motorcycle n GO</h6>
+                <button onclick="back()" class="btn btn-warning" style="width: 35px;"><i class="fa fa-arrow-left"></i></button>
+        <img src="cars/bp.jpg" alt="" style="widows: 50px; height:50px">
+        <h6>Item:</h6>
+    
+        <button onclick="plus()" id="plus" class="btn btn-success" style="width: 35px;"><i class="fa fa-plus"></i></button>
+        <button class="btn btn-info" style="width: 35px;"><i class="fa fa-minus"></i></button>
+        <input type="number" placeholder="" id="inpt">
+        <button class="btn btn-danger" style="width: 35px;"><i class="fa fa-trash"></i></button>
+
+
+        
+    </center>
+    </div>
+
+    <div class="" style="background-color: greenyellow; margin-top:-530px" id="Truck">
+        <center>
+        <button onclick="hip()" class="btn btn" style="width: 35px;"><i class="fa fa-times"></i></button>
+        <h4>count ur Truck n GO</h4>
+                <button onclick="turn()" class="btn btn-warning" style="width: 35px;"><i class="fa fa-arrow-left"></i></button>
+        <img src="cars/bp.jpg" alt="" style="widows: 50px; height:50px">
+        <h6>Item:</h6>
+    
+        <button onclick="plus()" id="plus" class="btn btn-success" style="width: 35px;"><i class="fa fa-plus"></i></button>
+        <button class="btn btn-info" style="width: 35px;"><i class="fa fa-minus"></i></button>
+        <input type="number" placeholder="" id="inpt">
+        <button class="btn btn-danger" style="width: 35px;"><i class="fa fa-trash"></i></button>
+       
+
+        
+    </center>
+    </div>
+
+    <div class="con2" style="background-color: greenyellow;margin-top:-530px" id="bike">
+        <center>
+                <button onclick="tip()" class="btn btn" style="width: 35px;"><i class="fa fa-times"></i></button>
+         <h6>count ur bicycle n GO</h6>
+        <button onclick="ack()" class="btn btn-warning" style="width: 35px;"><i class="fa fa-arrow-left "></i></button>
+        <img src="cars/bi.jpg" alt="" style="widows: 50px; height:50px">
+        <h6>Item:</h6>
+    
+        <button onclick="plus()" id="plus" class="btn btn-success" style="width: 35px;"><i class="fa fa-plus"></i></button>
+        <button class="btn btn-info" style="width: 35px;"><i class="fa fa-minus"></i></button>
+        <input type="number" placeholder="" id="inpt">
+        <button class="btn btn-danger" style="width: 35px;"><i class="fa fa-trash"></i></button>
+       
+        
+    </center>
+    </div>
+
+    <div class="open-page" style="background-color: floralwhite; border-color: black;" id="remark">
+        <center>
+            <h1>WELCOME TO THE</h1>
+            <h4>count down app</h4>
+            <button onclick="prep()" class="btn btn-secondary">Proceed</button>
+            <marquee behavior="" direction=""> <h3 style="color: darkorange">The Transport counter App!</h3></marquee>
+        </center>
+    </div>
+
+<!-- <div class="container" style="background:deeppink !important; height: auto;" >
+    <nav class="navbar">
+        <button class="btn btn-primary"></button>
+    </nav>
+</div> -->
+
+</body>
+<script src="jquery/jquery.min.js"></script>
+<script>
+function prep(){
+    $('#cont').toggle(1000);
+    document.getElementById('cont').style.display="block";
+    document.getElementById('remark').style.display="none"
+}
+function tip(){
+    $('#bike')
+document.getElementById('bike').style.display="none";
+}
+function hip(){
+    $('#Truck')
+document.getElementById('Truck').style.display="none";
+}
+function kip(){
+    $('#gp')
+document.getElementById('gp').style.display="none";
+}
+function bip(){
+    $('#girl')
+document.getElementById('girl').style.display="none";
+}
+
+
+function menu(){
+    $('#but').toggle(1000);
+    document.getElementById('but').style.display="block";
+    // document.getElementById('cont').style.display="block"
+}
+function car(){
+    $('#girl').toggle(1000);
+    document.getElementById('girl').style.display="block";
+    document.getElementById('but').style.display="none"
+}
+function truck(){
+    $('#Truck').toggle(1000);
+    document.getElementById('Truck').style.display="block";
+    document.getElementById('but').style.display="none"
+}
+function mot(){
+    $('#gp').toggle(1000);
+    document.getElementById('gp').style.display="block";
+    document.getElementById('but').style.display="none"
+    
+}
+function bik(){
+    $('#bike').toggle(1000);
+    document.getElementById('bike').style.display="block";
+    document.getElementById('but').style.display="none"
+    
+}
+function back(){
+    $('#but').toggle(1000);
+ document.getElementById('but').style.display="block"
+ document.getElementById('gp').style.display="none";
+    
+}
+function bac1(){
+    // $('#cont').toggle(1000);
+    document.getElementById('but').style.display="none";
+    document.getElementById('cont').style.display="block";
+    
+}
+
+function turn(){
+    // $('#cont').toggle(1000);
+    document.getElementById('but').style.display="block";
+    document.getElementById('Truck').style.display="none";
+    
+    
+}
+function bak(){
+    $('#but').toggle(1000);
+    document.getElementById('girl').style.display="none";
+    
+ 
+}
+function ack(){
+    $('#but').toggle(1000);
+    document.getElementById('bike').style.display="none";
+    // document.getElementById('bike').style.display="block";
+    // document.getElementById('gp').style.display = "";
+ 
+}
+function ret(){
+    // $('#remark');
+    document.getElementById('remark').style.display="block";
+    document.getElementById('cont').style.display="none"
+    
+}
+// function plus(){
+//     // for (let index = 0; index < array.length; index++) {
+//     //     const element = array[index];
+//     var a=document.getElementById('plus');
+//         for (let a = 0; a < a.value; a++) {
+//             document.innerHTML('inpt')=a;
+            
+//         }
+        
+   
+//     }
+ 
+
+</script>
+</html>
